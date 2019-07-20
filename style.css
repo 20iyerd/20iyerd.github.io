@@ -8,3 +8,9 @@ body {
     color: black;
     background: cornflowerblue;
 }
+
+ul {
+    list-style-type: georgian;
+    margin: 0;
+    padding: 0;
+}
