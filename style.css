@@ -6,7 +6,7 @@ body {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
-    background: grey;
+    background: (30,30,30);
 }
 
 ul {
