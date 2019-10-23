@@ -6,11 +6,32 @@ body {
     text-align: center;
     font-family: 'georgian', 'Arial', Arial, sans-serif;
     color: black;
-    background: (60,60,60);
+    background: (160,160,160);
 }
 
 ul {
-    list-style-type: georgian;
+    list-style-type: square;
     margin: 0;
     padding: 0;
+}
+
+.tables {
+    column-count: 4;
+    /* width: 300px; */
+    padding: 50px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cols {
+    width: auto;
+    padding: 50px;
+}
+
+col:nth-child(even) {
+    background: rgb(141, 252, 206);
+}
+col:nth-child(odd) {
+    background: rgb(161, 255, 226);
 }
