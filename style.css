@@ -4,9 +4,11 @@ img {
 
 body {
     text-align: center;
-    font-family: 'georgian', 'Arial', Arial, sans-serif;
+    font-family: 'georgian', sans-serif;
     color: black;
-    background: (160,160,160);
+    background-image: url("cubes.jpg");
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
 }
 
 ul {
@@ -26,12 +28,20 @@ ul {
 
 .cols {
     width: auto;
-    padding: 50px;
+    padding: 100px;
+    vertical-align: top;
 }
 
 col:nth-child(even) {
-    background: rgb(141, 252, 206);
+    background: #ccffff;
+
 }
 col:nth-child(odd) {
-    background: rgb(161, 255, 226);
+    background: #e6ffff;
+}
+
+i.fab, i.fas {
+    font-size: 36pt;
+    color: black;
+    padding: 1%;
 }
