@@ -64,12 +64,6 @@ i.fab, i.fas {
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: rgb(0, 0, 0);
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
     background-color: rgb(16, 124, 101);
-    color: white;
+    color: rgb(255, 255, 255);
   }
