@@ -1,7 +1,3 @@
-img {
-    width: 200px;
-}
-
 body {
     text-align: center;
     font-family: 'georgian', sans-serif;
@@ -9,10 +5,11 @@ body {
     background-image: url("cubes.jpg");
     background-size: 100% 200%;
     background-repeat: no-repeat;
+    background-color: rgb(240, 240, 240);
 }
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -24,29 +21,32 @@ i.fab, i.fas {
 }
 
 .topnav {
-    background-color: rgb(121, 121, 121);
+    /* background-color: rgb(121, 121, 121); */
+    background-color: transparent;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: darkgray;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 12px;
     text-decoration: none;
     font-size: 20px;
+    border-right: 2px solid lightgrey;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: rgb(16, 124, 101);
+    /* background-color: rgb(16, 124, 101); */
     color: rgb(255, 255, 255);
+    border-bottom: 4px double darkcyan;
   }
 
   .dropdown {
     /* position: relative; */
-    padding-top: 14px;
+    padding-top: 12px;
     float: left;
     /* float: inherit; */
     font-size: 20px;
@@ -59,7 +59,7 @@ i.fab, i.fas {
     font-size: 20px;  
     border: none;
     outline: none;
-    color: white;
+    color: darkgray;
     background-color: inherit;
     font-family: inherit;
     margin: 0px;
@@ -68,8 +68,10 @@ i.fab, i.fas {
   .dropdownContent {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
+    background-color: transparent;
     /* min-width: 160px; */
+    padding-top: 18px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -85,12 +87,14 @@ i.fab, i.fas {
     /* width: max-content; */
   }
 
-  .dropdownContent a:hover {background-color: #ddd;}
-  .topnav a:hover, .dropdown:hover .ddbutton {
+  /* .dropdownContent a:hover {background-color: #ddd;} */
+  .dropdownContent a:hover {background-color: transparent;}
+  /* .topnav a:hover, .dropdown:hover .ddbutton {
     background-color: rgb(16, 124, 101);
-  }
-  .dropdown:hover .dropdownContent {display: block;}
-  .dropdown:hover .ddbutton {background-color: rgb(16, 124, 101);}
+  } */
+  .dropdown:hover .dropdownContent {display: block; text-align: center;}
+  /* .dropdown:hover .ddbutton {background-color: rgb(16, 124, 101);} */
+  .dropdown:hover .ddbutton {color: white;}
 
   .footer {
       position: fixed;
@@ -104,4 +108,139 @@ i.fab, i.fas {
 
   .aboutMe {
       color: darkgrey;
+      padding: 5%;
+  }
+
+  .profilePic {
+      width: 200px;
+      padding-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .cards {
+    list-style-type: none;
+    padding: 48px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutMeCards {
+    width: 200px;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    transition: 0.3s;
+    padding: 20px;
+    /* background-color:  rgb(20, 219, 176); */
+    border-bottom: 4px groove darkcyan;
+    border-left: 4px medium gray;
+  }
+
+  .aboutMeCards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .interstellar {
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+    background-color:  rgba(16, 124, 101, 0.500);
+  }
+
+  .interstellar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .websites {
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 20px;
+    background-color:  rgba(16, 111, 124, 0.5);
+  }
+
+  .websites:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  .letter {
+    background-color: rgb(200, 200, 200);;
+    text-align: left;
+    padding: 60px;
+    color: darkslategray;
+    line-height: 1.6;
+  }
+
+  .tableofcontents {
+    text-align: left;
+    font-size: larger;
+    background-color: lightgray;
+    padding: 40px;
+    line-height: 2;
+    color: darkslategray;
+    padding-left: 36%;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(240, 134, 14);
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    margin-left: -3px;
+  }
+
+  .container {
+    padding: 10px 40px;
+    position: relative;
+
+    background-color: inherit;
+    width: 100%;
+    left: 0%;
+  }
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 4px solid darkcyan;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    left: -16px;
+  }
+
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 12px;
+  }
+
+  .contentPar {
+    text-align: left;
+    width: 60%;
+    padding-left: 20%;
+  }
+
+  .timelineTitle {
+    border-color: transparent;
+    width: fit-content;
   }
