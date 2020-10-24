@@ -41,7 +41,7 @@ i.fab, i.fas {
   .topnav a:hover {
     /* background-color: rgb(16, 124, 101); */
     color: rgb(255, 255, 255);
-    border-bottom: 4px double darkcyan;
+    /* border-bottom: 4px groove darkcyan; */
   }
 
   .dropdown {
