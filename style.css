@@ -2,18 +2,20 @@ body {
     text-align: center;
     font-family: monospace, sans-serif;
     color: rgb(220, 220, 220);
-    background-size: auto;
+    background-image: url("assets/test2.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
     background-color: rgb(25, 25, 25);
 }
 
 h1 {
-    padding-top: 300px;
+    /* padding-top: 300px; */
     text-align: center;
 }
 
 header {
     padding-bottom: 300px;
-    background-image: url("test.png");
     background-color: transparent;
 }
 
@@ -22,6 +24,7 @@ header {
 }
 
 .topnav {
+    padding-bottom: 300px;
     background-color: transparent;
     overflow: hidden;
 }
@@ -37,6 +40,12 @@ header {
 
 .topnav a:hover {
     color: rgb(255, 255, 255);
+}
+
+.aboutme {
+    background-color: rgba(100,100,100,0.8);
+    width: 800px;
+    /* position: fixed; */
 }
 
 i.fab, i.fas {
