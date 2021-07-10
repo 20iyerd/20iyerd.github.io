@@ -7,21 +7,30 @@ body {
     background-size: 110%;
     background-position: center;
     background-color: rgb(25, 25, 25);
+    /* margin-bottom: 60px; */
 }
 
 h1 {
-    /* padding-top: 300px; */
     text-align: center;
 }
 
 header {
-    padding-bottom: 300px;
+    /* padding-bottom: auto; */
     background-color: transparent;
 }
 
-.footer {
+/* .footer {
     position: fixed;
-}
+    display: block;
+} */
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    margin-bottom: 15px;
+  }
 
 .topnav {
     padding-bottom: 300px;
@@ -43,9 +52,11 @@ header {
 }
 
 .aboutme {
-    background-color: rgba(100,100,100,0.8);
-    width: 800px;
-    /* position: fixed; */
+    background-color: rgba(0,0,0,0.8);
+    width: 960px;
+    text-align: left;
+    font-size: 20px;
+    margin: 0 auto;
 }
 
 i.fab, i.fas {
