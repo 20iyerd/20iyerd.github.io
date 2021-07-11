@@ -57,7 +57,8 @@ footer {
 
 .aboutme {
     background-color: rgba(0,0,0,0.8);
-    width: 960px;
+    width: max-content;
+    height: max-content;
     text-align: left;
     font-size: 20px;
     margin: 0 auto;
