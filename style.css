@@ -61,14 +61,14 @@ a {
 }
 
 .aboutme {
-    /* background-color: rgba(0,0,0,0.8); */
-    width:max-content;
-    height: max-content;
+    width: max-content;
+    height: fit-content;
     text-align: left;
     font-size: 20px;
-    margin: 0 auto;
+    margin: auto auto;
     border-style: solid;
     border-color:mintcream;
+    padding: 25px;
 }
 
 .index {
