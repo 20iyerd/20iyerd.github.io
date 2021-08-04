@@ -2,38 +2,19 @@ body {
     text-align: center;
     font-family: monospace, sans-serif;
     color: rgb(220, 220, 220);
-    /* background-image: url("assets/test2.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 100%; */
     background-color: rgb(25, 25, 25);
     background-size: cover;
-    /* background-position: center; */
-    /* margin-bottom: 60px; */
 }
 
 h1 {
     text-align: center;
-    /* background-color: rgba(0,0,0,0.8); */
-}
-h4 {
-    /* background-color: rgba(0,0,0,0.8); */
 }
 
-header {
-    /* padding-bottom: auto; */
-    /* background-color: rgba(0,0,0,0.8); */
-}
-
-/* .footer {
-    position: fixed;
-    display: block;
-} */
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
     height: 60px;
-    /* background-color: rgba(0,0,0,0.8); */
     margin-bottom: 25px;
   }
 
@@ -41,8 +22,12 @@ a {
     color:aquamarine;
 }
 
+ul {
+    text-align: left;
+}
+
 .topnav {
-    padding-bottom: 300px;
+    padding-bottom: 200px;
     background-color: transparent;
     overflow: hidden;
 }
@@ -63,9 +48,17 @@ a {
 .aboutme {
     width: max-content;
     height: fit-content;
-    text-align: left;
     font-size: 20px;
-    margin: auto auto;
+    margin: auto;
+    border-style: solid;
+    border-color:mintcream;
+    padding: 25px;
+}
+
+.portfolio {
+    width: max-content;
+    height: fit-content;
+    margin: auto;
     border-style: solid;
     border-color:mintcream;
     padding: 25px;
@@ -74,6 +67,10 @@ a {
 .index {
     border-style: solid;
     border-color:mintcream;
+    width: max-content;
+    height: fit-content;
+    margin: auto;
+    padding: 25px;
 }
 
 i.fab, i.fas {
