@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/6ea8043d2e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./../style.css" />
+</head>
+
+<body>
+    <h1>Recording Electronic Music – The Origins of Analog Synthesis</h1>
+    <h2>Introduction</h2>
+        <p>
+            In my last article, I discussed Laurie Spiegel’s <i>The Expanding Universe</i>, espousing its contributions to the development of modern electronic music. In the review, I discussed the method in which it was recorded-- despite being an electronic composition, it had to be recorded similarly to a band or singer. This overlap of the eras of tape recording and early analog synthesis are fascinating, and in this article, I hope to explore that crucial period where technology developed incredibly quickly.
+            <br><br>
+            The GROOVE system was developed as a human-computer hybrid system to enable real-time interactive performance. Because computers at the time used vacuum-tube technology, it was difficult for the computing power necessary for pure analog synthesis and algorithmic composition to be achieved by a standard computer. For this reason, Max Mathews and Richard Moore worked to create a system where a human musician could play an analog synthesizer, and the computer would record a number of parameters to store in its memory. These parameters, which resemble modern-day MIDI standards, could then be used to play back the sound.
+        </p>
+    <h2>Additive and Subtractive Analog Synthesis</h2>
+        <p>
+            To understand this story, we must first start with the most fundamental element of sound: the sine wave. All sounds we hear, from the deepest roar of a jet engine to the highest piercing tone of a piccolo, are the sum of infinitely many sine waves.
+            <figure>
+                <figcaption>sine wave of A (440 Hz)</figcaption>
+            <audio controls>
+                <source src="../assets/recordings/440sin.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            </figure>
+            <br><br>
+            Each wave has three characteristics which distinguish it from other waves: amplitude, wavelength, and phase. Without getting into too much mathematical detail, we can explain these in terms of music. Amplitude is how "tall" the wave is. In music, a louder tone has a higher amplitude. Wavelength isn't often talked about, but what is a key part of music is the <i>frequency</i>. Frequency is inversely proportional to wavelength, so the shorter the distance between each peak of the wave, the higher the frequency. In music, higher frequency corresponds to higher pitch. Finally, the phase is not as easy to understand practically. However, when setting up speaker systems, it's often what can cause the same sound from two sources to result in constructive or destructive interference. This is seen in the graphic below, where the phase of the moving wave can cause the amplitude of the sum of these two waves to either be double the original or 0.
+        </p>
+        <iframe src="https://www.desmos.com/calculator/m7gowpneve?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+        <br><br>
+        <p>
+            What causes different instruments to have different tonal qualities, even when playing the same note? Musically, we call it <i>timbre</i>. The purest tone in music is a sine wave. All pitched tones are built by adding harmonics of the fundamental frequency to create a unique sound. For something like a square wave, this means adding the odd-integer harmonics of the fundamental. For a sawtooth wave, the tone is built by adding all integer multiple harmonics of the fundamental frequency. This concept can be extrapolated, adding harmonics to build all sorts of sounds. This forms the basis of analog additive synthesis, which is how some of the first synthesizers were created.
+            <figure>
+                <figcaption>square wave of A (440 Hz) - using odd harmonics</figcaption>
+                <audio controls>
+                    <source src="../assets/recordings/440sq.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+            <figure>
+                <figcaption>sawtooth wave of A (440 Hz) - using all harmonics</figcaption>
+                <audio controls>
+                    <source src="../assets/recordings/440saw.wav" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </figure>
+        </p>
+        <br>
+    <h2>Digital Music and Analog Recording</h2>
+        <p>
+            Where Laurie Spiegel’s groundbreaking record was first composed on the GROOVE system, the world of electronic music had been innovating rapidly. From the advent of Pierre Schaeffer's <i>music concrète</i> in 1948 to the first true "computer music" in the early 1960s, there was no shortage of new ways to create music. As Moog synthesizers began to be mass-produced in the 1970s, electronic music reached the commercial mainstream, even as recording was still largely in its <i>magnetic era</i>. The first commercial equipment to record music digitally was introduced in 1981 by Sony. The PCM-F1 encoder was able to capture samples of sound incredibly rapidly, and reconstruct the analog sound from these samples through interpolation. This method, although much improved, is still used today.
+            <br><br>
+            Early electronic music was recorded in the analog onto tape, with no sampling involved. It used analog synthesis, as described above, unlike modern electronic music. Now, to achieve an "electronic" sound, MIDI controllers send parameters such as note, velocity, and duration to a computer, where a processor converts the values into an "analog sound" (still in digital), sending it out to the DAC controllers (digital to analog). The only "analog" values exist when the music leaves the speakers/headphones into the listener's ear. In the early 70s, though, analog synthesizers combined sine waves and recorded them onto tape, with no digital signals involved. These had the benefit of being "lossless" signals.
+        </p>
+    <h2>High-Fidelity Recordings</h2>
+        <p>
+            While recording with magnetic tape was time-consuming and resource-intensive, it had a benefit that was not realized until the widespread adoption of digital recording techniques. Because the signal was not being converted from an analog signal (the performance) to digital, there was no aliasing, loss of data, or other distortion that is commonly introduced by recording now. By nature, digital recording and playback involves sampling, which causes some small parts of the signal to be lost. Additionally, something called the <i>Nyquist sampling rate</i> requires that recording and playback sampling frequencies be high enough to avoid high frequencies being erased. These considerations are often what make vinyl records so appealing, and engineers are always trying to find ways to make recording and playback more authentic.
+        </p>
+</body>
